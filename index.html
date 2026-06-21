@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelia, Hanna Khaye</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="estar.png">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap" rel="stylesheet">
+<body>
+    <body style="background-color: rgb(231, 167, 210);"
+    <div class="sakura-container"></div>
+    <div class="card">
+        <h1>Hello, I'm <b>Hanna</b>🌷</h1>
+        <p class="intro">
+            Welcome to my websiittteeee! ❤
+        </p>
+        <div class="menu">
+            <button onclick="showAbout()">About Me</button>
+            <button onclick="showSocials()">Socials</button>
+        </div>
+    </div>
+    <div id="socialBox" class="popup">
+        <h2>My Socials</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/hkiinrv/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/hanna.khaye.nicole.pelia/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@hvkrii" target="_blank">TikTok</a></li>
+        </ul>
+    </div>
+    <div id="aboutBox" class="popup">
+        <h2>About Me</h2>
+        <P><b>Full Name:</b> Hanna Khaye Nicole Pelia</P>
+        <P><b>Age:</b> 15</P>
+        <P><b>Hobbies:</b> Crocheting, Singing and Playing instruments</P>
+        <p><b>Birthdate:</b> January 4, 2011</p>
+        <p><b>Zodiac Sign:</b> Capricorn</p>
+        <p><b>Favorite Color:</b> Pink</p>
+        </div>
+    <script>
+        function showSocials() {
+            document.getElementById('socialBox').style.display = 'block';
+            document.getElementById('aboutBox').style.display = 'none';
+        }
+
+        function showAbout() {
+            document.getElementById('socialBox').style.display = 'none';
+            document.getElementById('aboutBox').style.display = 'block';
+        }
+    </script>

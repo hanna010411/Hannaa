@@ -1,0 +1,268 @@
+body {
+    background: linear-gradient(to bottom,
+    #ffdff2 0%,
+    #ffdff2 70%,
+    #ffbfdb 70%,
+    #ffbfdb 100%
+    );
+    font-family: "Baloo 2", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+/*Buttons*/
+.menu button {
+    text-decoration: none;
+    background: #ffd6e9;
+    color: #555;
+    padding: 12px 18px;
+    border-radius: 18px;
+    border: 2px solid #ff9ed3;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+/*Hover effect*/
+.menu button:hover {
+    transform: translateY(-4px);
+    background: #ff9ecd;
+    box-shadow: 0px 4px 10px rgba(255, 93, 166, 0.4);
+}
+.popup {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+    display: none;
+    margin-top: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.profile {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.artworks-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+/*Title*/
+h1 {
+    font-size: 3rem;
+    font-family: "DynaPuff", sans-serif;
+    font-weight: 600;
+    color:#ff47a9;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+/*Intro Text*/
+.intro {
+    color: #7a7a7a;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+/*Menu Container*/
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+/*Buttons*/
+.menu button {
+    text-decoration: none;
+    background: #ffd6e9;
+    color: #555;
+    padding: 12px 18px;
+    border-radius: 18px;
+    border: 2px solid #ff9ed3;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+/*Hover effect*/
+.menu button:hover {
+    transform: translateY(-4px);
+    background: #ff9ecd;
+    box-shadow: 0px 4px 10px rgba(255, 93, 166, 0.4);
+}
+.popup {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+    display: none;
+    margin-top: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.profile {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.artworks-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.artwork {
+    margin-bottom: 20px;
+}
+.artwork p {
+    margin-top: 8px;
+}
+.artwork img {
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+img {
+    max-width: 120px!important;
+}
+button {
+    background: #ffd6e9;
+    color: #6b4f58;
+    border: 2px solid #ff9ebb;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    font-family: "Baloo 2", sans-serif;
+}
+button:hover {
+    background: #ff9ec5;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 12px rgba(255, 155, 187, 0.4);
+}
+button:active {
+    transform: scale(0.95);
+}
+/*Main card*/
+.card {
+    background-color: #fffdfe;
+    width: 550px;
+    border-radius: 25px;
+    padding: 50px;
+    border: 3px solid #ffffff;
+    text-align: center;
+    box-shadow:
+        8px 8px 0px #ff7eba,
+        0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* Sakura background */
+.sakura-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.sakura {
+    position: absolute;
+    top: -50px;
+    width: 18px;
+    height: 18px;
+    background: #ffb7d5;
+    border-radius: 60% 40% 70% 30%;
+    opacity: 0.8;
+    animation: fall linear forwards;
+}
+
+.sakura::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(45deg);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) translateX(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(110vh) translateX(100px) rotate(360deg);
+    }
+}
+#musicBtn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 1000;
+}
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    font-size: 24px;
+
+    color: rgb(211, 140, 187);              /* Makes ▶ and ⏸️ white */
+    background: #fff9fb;
+
+    z-index: 1000;
+}
